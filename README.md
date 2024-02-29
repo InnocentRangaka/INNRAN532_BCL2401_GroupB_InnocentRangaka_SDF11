@@ -29,6 +29,6 @@ The website is divided into several sections, each with a specific purpose:
 
 ## Areas for Improvement
 
-**Advanced Tailwind Features:** Exploring more complex Tailwind properties for enhanced design.<br>
-**Code Optimization:** Optimizing code for better performance and maintainability.<br>
+**Advanced Tailwind Features:** Exploring more complex Tailwind properties for enhanced design.
+**Code Optimization:** Optimizing code for better performance and maintainability.
 **Creative Design Choices:** Exploring alternative design options for further visual appeal.
