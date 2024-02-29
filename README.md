@@ -2,7 +2,7 @@
 
 # Welcome to the Cache Bank
 
-The Cache Bank MVP website project, provides a brief overview of the Cache Bank's MVP website structure and key components, built with HTML and tailwind, showcasing Cache Bank's value proposition for software developers.
+The Cache Bank MVP website project, provides a brief overview of the Cache Bank's MVP website structure and key components, built with HTML and tailwind, and communicates the Cache Bank's value proposition and features to target audiences.
 
 ## Website Structure:
 
@@ -16,7 +16,19 @@ The website is divided into several sections, each with a specific purpose:
 7. **How it Works:** Explains the simple and user-friendly process of opening an account with Cache Bank.
 8. **Contact:** Provides Cache Bank's contact details.
 
+## Technology Stack:
+
+**Front-end:** HTML, Tailwind/CSS, JavaScript.
+**Version Control:** Git/Github.
+
 ## Key Learnings
-Responsive Design: Adapting website layout for various screen sizes.
-HTML Structure: Organizing content using semantic HTML elements.
-CSS Techniques: Employing CSS features like styling, layout, and potentially animations.
+
+**Responsive Design:** Adapting website layout for various screen sizes.
+**HTML Structure:** Organizing content using semantic HTML elements.
+**CSS Techniques:** Employing Tailwind CSS features like styling, layout, and potentially animations/effects.
+
+## Areas for Improvement
+
+**Advanced Tailwind Features:** Exploring more complex Tailwind properties for enhanced design.
+**Code Optimization:** Optimizing code for better performance and maintainability.
+**Creative Design Choices:** Exploring alternative design options for further visual appeal.
