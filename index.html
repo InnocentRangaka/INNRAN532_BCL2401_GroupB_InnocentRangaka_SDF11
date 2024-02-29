@@ -15,73 +15,89 @@
     </head>
 
     <body class="bg-gray-100">
-        <div class="container flex flex-col mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+        <!-- Added Header element to create full width header and added sticky to make it fixed and w-screen for 100vw -->
+        <!--  COMPONENT 1: Navigation Menu and Mobile Navigation -->
+        <header class="sticky w-screen flex flex-row bg-white top-0">
             <!-- Main container with navigation and header content -->
+            <!-- Removed px-4 sm:px-6 lg:px-8 -->
+            <div class="container w-full flex flex-col mx-auto bg-white">
+                <div class="relative flex flex-wrap items-center justify-between w-full shrink-0">
+                    <!-- Split div into 2 for full width mobile menu -->
+                    <div id="horizontal-menu" class="flex flex-wrap items-center justify-between w-full ">
+                        <!-- Main container with navigation and header content -->
+                        <!-- Changed px-4 to py-4 pr-4 to put logo div pl-0 -->
+                        <div class="px-4">
+                            <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
+                        </div>
+                        <div class="hidden md:flex items-center justify-between gap-12 text-black">
+                            <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Product</a>
+                            <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Features</a>
+                            <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
+                            <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Contact</a>
+                        </div>
 
-            <!--  COMPONENT 1: Navigation Menu and Mobile Navigation -->
-            <div class="relative flex flex-warp items-center justify-between w-full shrink-0">
-                <!-- Main container with navigation and header content -->
-                <div class="px-4">
-                    <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
-                </div>
-                <div class="hidden md:flex items-center justify-between gap-12 text-black">
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Product</a>
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Features</a>
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Get Started</a>
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Contact</a>
-                </div>
+                        <!-- Changed p-4 to py-4 pl-4 to make buttons div pr-0 -->
+                        <div class="hidden md:flex items-center gap-8 py-4 pl-4">
+                            <button class="text-sm font-normal text-gray-800 hover:text-gray-900">Log In</button>
+                            <button class="px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
+                        </div>
+                        <button class="md:hidden p-4" id="mobile-menu-toggle">
+                            <svg
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                class="h-6 w-6"
+                                fill="none"
+                                >
+                                <g clip-path="url(#clip0_429_11066)">
+                                <path
+                                    d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+                                    stroke="#292929"
+                                    stroke-width="2.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_429_11066">
+                                    <rect
+                                    width="24"
+                                    height="24"
+                                    fill="white"
+                                    transform="translate(0 0.000915527)"
+                                    />
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
 
-                <div class="hidden md:flex items-center gap-8 p-4">
-                    <button class="text-sm font-normal text-gray-800 hover:text-gray-900">Log In</button>
-                    <button class="px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
-                </div>
-                <button class="md:hidden p-4" id="mobile-menu-toggle">
-                    <svg
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="h-6 w-6"
-                        fill="none"
-                        >
-                        <g clip-path="url(#clip0_429_11066)">
-                        <path
-                            d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
-                            stroke="#292929"
-                            stroke-width="2.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_429_11066">
-                            <rect
-                            width="24"
-                            height="24"
-                            fill="white"
-                            transform="translate(0 0.000915527)"
-                            />
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </button>
-                <div id="mobile-menu" class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full hidden">
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Product</a>
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Features</a>
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Pricing</a>
-                    <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900">Company</a>
-                    <button class="flex items-center text-sm font-normal text-black">Log In</button>
-                    <button class="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300">Sign Up</button>
+                    <!-- Replaced w-full with w-screen, added -left-4 to move the mobile-menu div to left-0 and added px-4 sm:px-6 lg:px-8 -->
+                    <!-- Added id and hidden class to initially hide the mobile menu on small screens -->
+                    <div id="mobile-menu" class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-screen gap-3 overflow-hidden bg-white max-h-screen top-full -left-4 px-4 sm:px-6 lg:px-8 py-4 hidden">
+                        <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8">Product</a>
+                        <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8">Features</a>
+                        <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8">Pricing</a>
+                        <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8">Company</a>
+                        <button class="flex items-center text-sm font-normal text-black mx-4 sm:mx-6 lg:mx-8">Log In</button>
+                        <button class="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300 mx-4 sm:mx-6 lg:mx-8">Sign Up</button>
+                    </div>
                 </div>
             </div>
+        </header>
 
-            <!-- Component 2: Hero and Endorsements -->
-            <!-- HERO -->
-            <section id="hero" class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+        <!-- Changed DIVs to Sections for semantic layout -->
+
+        <!-- Component 2: Hero and Endorsements -->
+        <!-- HERO -->
+        <section id="hero" class="w-full">
+            <div class="container grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
                 <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
                     <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
                         The Clever Place to Keep Your Cache
                     </h1>
-                    <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                    <!-- Added px-4 sm:px-0 to add padding on smaller screen only -->
+                    <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900 px-4 sm:px-0">
                         Cache Bank is designed exclusively for software developers. 
                         We understand your financial needs are as unique as the code you write. 
                         Our services offer cutting-edge financial solutions that help you take care of your cash.
@@ -105,9 +121,8 @@
                         alt="header image"
                     />
                 </div>
-            </section>
-
-        </div>
+            </div>
+        </section>
 
         <!-- ENDORSEMENT -->
         <section id="endorsements" class="w-full">
@@ -141,7 +156,7 @@
         <section id="features" class="w-full">
             <div class="container mx-auto py-10 flex flex-col items-center justify-center">
     
-                <div class="flex flex-col items-center justify-center mt-12">
+                <div class="flex flex-col items-center justify-center mt-12 px-4 sm:px-0">
                     <h1 class="mb-4 text-3xl font-extrabold leading-tight text-center lg:text-4xl text-dark-grey-900 font-display">
                         Elevate Your Banking with Cache
                     </h1>
@@ -152,63 +167,112 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
-                    <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
-                            <img src="assets/component-3/feature-icons/developer-focused-accounts.svg" alt="Developer-Focused Account Icon">
+
+                    <!-- Changed text-grey-700 to text-current on p element to add hover effect styling on each item div -->
+                    <!-- Added group on the main div and added group-hover: to style icon bg and p color when hovering the item -->
+                    <!-- Embedded SVGs as IMGs because there is no color changing effect or animations -->
+
+                    <div
+                        class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main text-grey-700 hover:text-dark-grey-900 group hover:bg-green-500 transition duration-300">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500 hover group-hover:bg-pink-500">
+                            <img src="assets/component-3/feature-icons/developer-focused-accounts.svg"
+                                alt="Developer-Focused Account Icon">
                         </div>
                         <div class="flex flex-col gap-2 px-2 text-center">
-                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Developer-Focused Account Plans</h4>
-                            <p class="font-medium text-grey-700">Tailored accounts offering benefits like high-yield savings and exclusive investment options, designed specifically for software developers' financial needs and career growth.</p>
+                            <h4 
+                                class="text-2xl font-extrabold text-dark-grey-900 font-display">
+                                Developer-Focused Account Plans
+                            </h4>
+                            <p 
+                                class="font-medium text-current">
+                                Tailored accounts offering benefits like high-yield savings
+                                and exclusive investment options, designed specifically for software developers' financial
+                                needs and career growth.</p>
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
-                            <img src="assets/component-3/feature-icons/advanced-online-banking.svg" alt="Advanced Online Banking Icon">
+                    <div
+                        class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main text-grey-700 hover:text-dark-grey-900 group hover:bg-green-500 transition duration-300">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500 group-hover:bg-pink-500">
+                            <img src="assets/component-3/feature-icons/advanced-online-banking.svg"
+                                alt="Advanced Online Banking Icon">
                         </div>
                         <div class="flex flex-col gap-2 px-2 text-center">
-                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Advanced Online Banking Platform</h4>
-                            <p class="font-medium text-grey-700">A cutting-edge, intuitive online banking interface with features like API integrations, allowing developers to seamlessly manage finances alongside their coding projects.</p>
+                            <h4 
+                                class="text-2xl font-extrabold text-dark-grey-900 font-display">
+                                Advanced Online Banking Platform
+                            </h4>
+                            <p 
+                                class="font-medium text-current">
+                                A cutting-edge, intuitive online banking interface with
+                                features like API integrations, allowing developers to seamlessly manage finances alongside
+                                their coding projects.</p>
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500">
-                            <img src="assets/component-3/feature-icons/tech-savvy-customer.svg" alt="Tech-Savvy Customer Icon">
+                    <div
+                        class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main text-grey-700 hover:text-dark-grey-900 group hover:bg-green-500 transition duration-300">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 rounded-2xl bg-green-500 group-hover:bg-pink-500">
+                            <img src="assets/component-3/feature-icons/tech-savvy-customer.svg"
+                                alt="Tech-Savvy Customer Icon">
                         </div>
                         <div class="flex flex-col gap-2 px-2 text-center">
-                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Tech-Savvy Customer Support</h4>
-                            <p class="font-medium text-grey-700">Expert support team with a deep understanding of the tech industry, providing relevant financial advice and assistance specifically for software developers.</p>
+                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Tech-Savvy Customer Support
+                            </h4>
+                            <p class="font-medium text-current">Expert support team with a deep understanding of the tech
+                                industry, providing relevant financial advice and assistance specifically for software
+                                developers.</p>
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
-                            <img src="assets/component-3/feature-icons/high-level-security.svg" alt="High-Level Security Icon">
+                    <div
+                        class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main text-grey-700 hover:text-dark-grey-900 group hover:bg-pink-500 transition duration-300">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500 group-hover:bg-green-500">
+                            <img src="assets/component-3/feature-icons/high-level-security.svg"
+                                alt="High-Level Security Icon">
                         </div>
                         <div class="flex flex-col gap-2 px-2 text-center">
-                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">High-Level Security Features</h4>
-                            <p class="font-medium text-grey-700">State-of-the-art cybersecurity measures, including multi-factor authentication and encryption, ensuring the safety of digital assets, which is crucial for tech professionals.</p>
+                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">High-Level Security Features
+                            </h4>
+                            <p class="font-medium text-current">State-of-the-art cybersecurity measures, including
+                                multi-factor authentication and encryption, ensuring the safety of digital assets, which is
+                                crucial for tech professionals.</p>
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
-                            <img src="assets/component-3/feature-icons/innovative-financial-tools.svg" alt="Innovative Financial Tools Icon">
+                    <div
+                        class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main text-grey-700 hover:text-dark-grey-900 group hover hover:bg-pink-500 transition duration-300">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500 group-hover:bg-green-500">
+                            <img src="assets/component-3/feature-icons/innovative-financial-tools.svg"
+                                alt="Innovative Financial Tools Icon">
                         </div>
                         <div class="flex flex-col gap-2 px-2 text-center">
-                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Innovative Financial Tools</h4>
-                            <p class="font-medium text-grey-700">Access to unique financial tools and resources, like project funding accounts and tech startup investment opportunities, catering to the entrepreneurial spirit of developers. </p>
+                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Innovative Financial Tools
+                            </h4>
+                            <p class="font-medium text-current">Access to unique financial tools and resources, like project
+                                funding accounts and tech startup investment opportunities, catering to the entrepreneurial
+                                spirit of developers. </p>
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300">
-                        <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500">
-                            <img src="assets/component-3/feature-icons/community-networking-opps.svg" alt="Community and Networking Opportunities Icon">
+                    <div
+                        class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main text-grey-700 hover:text-dark-grey-900 group hover:bg-pink-500 transition duration-300">
+                        <div
+                            class="flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-500 group-hover:bg-green-500">
+                            <img src="assets/component-3/feature-icons/community-networking-opps.svg"
+                                alt="Community and Networking Opportunities Icon">
                         </div>
                         <div class="flex flex-col gap-2 px-2 text-center">
-                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Community and Networking Opportunities</h4>
-                            <p class="font-medium text-grey-700">Exclusive access to tech events, webinars, and a community platform for networking, collaboration, and sharing insights within the software development industry. </p>
+                            <h4 class="text-2xl font-extrabold text-dark-grey-900 font-display">Community and Networking
+                                Opportunities</h4>
+                            <p class="font-medium text-current">Exclusive access to tech events, webinars, and a community
+                                platform for networking, collaboration, and sharing insights within the software development
+                                industry. </p>
                         </div>
                     </div>
 
@@ -244,9 +308,9 @@
         <!-- HOW IT WORKS -->
         <section id="how-it-works" class="w-full">
             <div class="container flex flex-col items-center gap-16 mx-auto my-32">
-                <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
-                    <!-- use bg-contain bg-no-repeat and remove bg-cover -->
-                    <div class="bg-cover bg-center hidden lg:block rounded-3xl" style="background-image: url('./assets/component-4/getting-started.png')">
+                <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2 px-4 sm:px-0">
+                    <!-- Removed bg-cover and added bg-contain bg-no-repeat to make bg-image responsive and contained within the column -->
+                    <div class="bg-contain bg-no-repeat bg-center w-full hidden lg:block rounded-3xl" style="background-image: url('./assets/component-4/getting-started.png')">
                     </div>
                     <div class="flex flex-col gap-16">
                         <div class="flex flex-col gap-2 text-center md:text-start">
@@ -257,7 +321,9 @@
                                 </span>
                             </p>
                         </div>
-                        <div class="grid w-full grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-10">
+
+                        <!-- added px-2 sm:px-0 to add padding on smaller screen only -->
+                        <div class="grid w-full grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-10 px-2 sm:px-0">
                             <div class="flex flex-col items-start gap-1">
                                 <div class="flex items-center justify-center w-12 h-12 rounded-full bg-green-500 mb-2">
                                     <span class="text-base font-bold leading-7 text-white">1</span>
@@ -330,6 +396,7 @@
 
         <!-- Component 5: Contact and Footer -->
         <!-- CONTACT -->
+        <!-- Embedded SVG as Img because there is no color changing effect or animations -->
         <section id="contact" class="w-full">
             <div class="container flex flex-col items-center gap-16 mx-auto my-32">
                 <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -339,7 +406,7 @@
                         </span>
                         <h3 class="text-2xl font-extrabold text-dark-grey-900 font-display">Email</h3>
                         <p class="text-base leading-7 text-dark-grey-600">Contact us at</p>
-                        <a class="text-lg font-bold text-green-500" href="mailto: hello@loopple.com">hi@cachebank.com</a>
+                        <a class="text-lg font-bold text-green-500" href="mailto:hi@cachebank.com">hi@cachebank.com</a>
                     </div>
                     <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
                         <span>
@@ -347,7 +414,7 @@
                         </span>
                         <h3 class="text-2xl font-extrabold text-dark-grey-900 font-display">Phone</h3>
                         <p class="text-base leading-7 text-dark-grey-600">Reach out to us by phone</p>
-                        <a class="text-lg font-bold text-green-500" href="tel:+516-486-5135">+215-486-5135</a>
+                        <a class="text-lg font-bold text-green-500" href="+215-486-5135">+215-486-5135</a>
                     </div>
                     <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
                         <span>
@@ -361,6 +428,7 @@
             </div>
         </section>
 
+        <!-- Changed div to footer -->
         <!-- FOOTER -->
         <footer class="w-full bg-green-500">
             <!-- Full-width footer container with green background -->
@@ -416,13 +484,15 @@
                         </div>
                     </div>
                     <div class="flex items-center">
-                        <p class="text-base font-normal leading-7 text-center text-grey-700">
+                        <!-- Changed text-grey-700 to text-dark-gray-900 to make text color darker -->
+                        <p class="text-base font-normal leading-7 text-center text-dark-gray-900">
                             2024 Cache Bank. All rights reserved.</p>
                     </div>
                 </div>
             </div>
         </footer>
 
+        <!-- Moved script to index.js  -->
         <script src="./assets/js/index.js"></script>
 
         <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
