@@ -36,12 +36,12 @@
                         <div class="px-4">
                             <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="Cache Bank logo">
                         </div>
-                        <div class="hidden md:flex items-center justify-between gap-12 text-black">
+                        <nav class="hidden md:flex items-center justify-between gap-12 text-black" role="navigation">
                             <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" tabindex="1" aria-label="Go to product section">Product</a>
                             <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" tabindex="2" aria-label="Go to features section">Features</a>
                             <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" tabindex="3" aria-label="Go to get started section">Get Started</a>
                             <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" tabindex="4" aria-label="Go to contact section">Contact</a>
-                        </div>
+                        </nav>
 
                         <!-- Changed p-4 to py-4 pl-4 to make buttons div pr-0 -->
                         <div class="hidden md:flex items-center gap-8 py-4 pl-4">
@@ -81,14 +81,14 @@
 
                     <!-- Replaced w-full with w-screen, added -left-4 to move the mobile-menu div to left-0 and added px-4 sm:px-6 lg:px-8 -->
                     <!-- Added id and hidden class to initially hide the mobile menu on small screens -->
-                    <div id="mobile-menu" class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-screen gap-3 overflow-hidden bg-white max-h-screen top-full -left-4 px-4 sm:px-6 lg:px-8 py-4 hidden" aria-controls="mobile-menu">
+                    <nav id="mobile-menu" class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-screen gap-3 overflow-hidden bg-white max-h-screen top-full -left-4 px-4 sm:px-6 lg:px-8 py-4 hidden" aria-controls="mobile-menu" role="navigation">
                         <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8" tabindex="1" aria-label="Go to product section">Product</a>
                         <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8" tabindex="2" aria-label="Go to features section">Features</a>
                         <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8" tabindex="3" aria-label="Go to get started section">Get Started</a>
                         <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8" tabindex="4" aria-label="Go to contact section">Contact</a>
                         <button class="flex items-center text-sm font-normal text-black mx-4 sm:mx-6 lg:mx-8" type="button" aria-label="Log in button">Log In</button>
                         <button class="flex items-center px-4 py-2 text-sm font-bold rounded-xl bg-purple-blue-100 text-purple-blue-600 hover:bg-purple-blue-600 hover:text-white transition duration-300 mx-4 sm:mx-6 lg:mx-8" aria-label="Sign up button">Sign Up</button>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -112,11 +112,11 @@
 
                     <div class="flex flex-col items-center gap-4 lg:flex-row">
                         <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 
-                        focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500" type="button" aria-label="Join Cache now button">
+                        focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500" aria-label="Join Cache now button">
                         Join Cache Now
                     </button>
                         <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-4 
-                        focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500" type="button" aria-label="Join our Discord Server button">
+                        focus:ring-purple-blue-100 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500" aria-label="Join our Discord Server button">
                         Join Our Discord Server
                     </button>
                     </div>
