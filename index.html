@@ -48,7 +48,7 @@
                             <button class="text-sm font-normal text-gray-800 hover:text-gray-900" type="button" aria-label="Log in button">Log In</button>
                             <button class="px-4 py-2 text-sm font-bold text-white bg-green-500 rounded-xl hover:bg-pink-500" type="button" aria-label="Sign up button">Sign Up</button>
                         </div>
-                        <button class="md:hidden p-4" id="mobile-menu-toggle" aria-labelledby="mobile-menu-toggle" role="navigation" type="button">
+                        <button class="md:hidden p-4" id="mobile-menu-toggle" title="mobile menu toggle" aria-labelledby="mobile-menu-toggle" role="navigation" type="button">
                             <svg
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -81,7 +81,7 @@
 
                     <!-- Replaced w-full with w-screen, added -left-4 to move the mobile-menu div to left-0 and added px-4 sm:px-6 lg:px-8 -->
                     <!-- Added id and hidden class to initially hide the mobile menu on small screens -->
-                    <div id="mobile-menu" class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-screen gap-3 overflow-hidden bg-white max-h-screen top-full -left-4 px-4 sm:px-6 lg:px-8 py-4 hidden" aria-controls="mobile-menu" aria-expanded="false">
+                    <div id="mobile-menu" class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-screen gap-3 overflow-hidden bg-white max-h-screen top-full -left-4 px-4 sm:px-6 lg:px-8 py-4 hidden" aria-controls="mobile-menu">
                         <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8" tabindex="1" aria-label="Go to product section">Product</a>
                         <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8" tabindex="2" aria-label="Go to features section">Features</a>
                         <a href="javascript:void(0)" class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 mx-4 sm:mx-6 lg:mx-8" tabindex="3" aria-label="Go to get started section">Get Started</a>
@@ -314,8 +314,8 @@
             </div>
         </section>
 
-        <!-- HOW IT WORKS -->
-        <section id="how-it-works" class="w-full">
+        <!-- GET STARTED -->
+        <section id="get-started" class="w-full">
             <div class="container flex flex-col items-center gap-16 mx-auto my-32">
                 <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2 px-4 sm:px-0">
                     <!-- Removed bg-cover and added bg-contain bg-no-repeat to make bg-image responsive and contained within the column -->
