@@ -47,5 +47,6 @@ The website strives to be inclusive for all users by adhering to web accessibili
 **Creative Design Choices:** Exploring alternative design options for further visual appeal.
 
 ## Deployment:
+[Netlify](https://ir532portfoliopiece.netlify.app/)
 
 ## 
