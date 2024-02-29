@@ -20,7 +20,7 @@ The website is divided into several sections, each with a specific purpose:
 
 ## Technology Stack:
 
-**Front-end:** HTML, Tailwind/CSS, JavaScript.<br>
+**Front-end:** HTML, CSS3 with Tailwind, JavaScript.<br>
 **Version Control:** Git/Github.
 
 ## Accessibility:
