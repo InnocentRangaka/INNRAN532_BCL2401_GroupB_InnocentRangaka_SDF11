@@ -2,6 +2,8 @@
 
 # Welcome to the Cache Bank
 
+## Overview:
+
 The Cache Bank MVP website project, provides a brief overview of the Cache Bank's MVP website structure and key components, built with HTML and tailwind, and communicates the Cache Bank's value proposition and features to target audiences.
 
 ## Website Structure:
@@ -21,14 +23,29 @@ The website is divided into several sections, each with a specific purpose:
 **Front-end:** HTML, Tailwind/CSS, JavaScript.<br>
 **Version Control:** Git/Github.
 
-## Key Learnings
+## Accessibility:
+
+The website strives to be inclusive for all users by adhering to web accessibility best practices, including:
+
+**Descriptive link text:** Links use clear and concise text to describe their destination.
+**Screen reader compatibility:** Semantic HTML structure and appropriate ARIA attributes are used to improve screen reader experience.
+**Sufficient color contrast:** Text and background colors have sufficient contrast to ensure readability for users with visual impairments.
+**Keyboard navigation:** Users can navigate the website using the keyboard, allowing access for those who rely on it.
+**Focus Styles:** Implementing clear visual indicators for focused elements.
+**Alternative Text for Images:** Providing alternative text descriptions for images using the alt attribute.
+
+## Key Learnings:
 
 **Responsive Design:** Adapting website layout for various screen sizes.<br>
 **HTML Structure:** Organizing content using semantic HTML elements.<br>
 **CSS Techniques:** Employing Tailwind CSS features like styling, layout, and potentially animations/effects.
 
-## Areas for Improvement
+## Areas for Improvement:
 
 **Advanced Tailwind Features:** Exploring more complex Tailwind properties for enhanced design.<br>
 **Code Optimization:** Optimizing code for better performance and maintainability.<br>
 **Creative Design Choices:** Exploring alternative design options for further visual appeal.
+
+## Deployment:
+
+## 
