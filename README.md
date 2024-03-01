@@ -47,6 +47,10 @@ The website strives to be inclusive for all users by adhering to web accessibili
 **Creative Design Choices:** Exploring alternative design options for further visual appeal.
 
 ## Deployment:
+
 **Netlify:** View live version of [Cash Bank](https://ir532portfoliopiece.netlify.app/)
 
-## 
+## Presentation:
+
+**Slides:** View presentation slides on [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTqK97rv6zCRNSJHmEEnS48GnMFCSq6XgO468lDZOElDPHXcYBRqZ4dIM_NwQj086bSSsoMN1j3t88W/pub?start=false&loop=false&delayms=3000)
+**Video** View illustration video on [Loom]()
