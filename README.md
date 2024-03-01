@@ -52,5 +52,5 @@ The website strives to be inclusive for all users by adhering to web accessibili
 
 ## Presentation:
 
-**Slides:** View presentation slides on [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTqK97rv6zCRNSJHmEEnS48GnMFCSq6XgO468lDZOElDPHXcYBRqZ4dIM_NwQj086bSSsoMN1j3t88W/pub?start=false&loop=false&delayms=3000)
+**Slides:** View presentation slides on [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vTqK97rv6zCRNSJHmEEnS48GnMFCSq6XgO468lDZOElDPHXcYBRqZ4dIM_NwQj086bSSsoMN1j3t88W/pub?start=false&loop=false&delayms=3000) <br>
 **Video** View illustration video on [Loom](https://www.loom.com/share/dd58be99d16c4c4fa89a0a4461cd6176?sid=5d6f9684-6539-48cd-bd19-70f6dc0ec49d)
